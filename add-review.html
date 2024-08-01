@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Review</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Add YouTube Video Review</h1>
+        <nav>
+            <a href="/">Home</a>
+            <a href="/add-review.html">Add Review</a>
+        </nav>
+    </header>
+    <main>
+        <form id="reviewForm">
+            <label for="videoTitle">Video Title:</label>
+            <input type="text" id="videoTitle" name="videoTitle" required>
+            
+            <label for="videoUrl">YouTube Video URL:</label>
+            <input type="url" id="videoUrl" name="videoUrl" required>
+            
+            <label for="reviewText">Review:</label>
+            <textarea id="reviewText" name="reviewText" required></textarea>
+            
+            <label for="summaryText">Summary:</label>
+            <textarea id="summaryText" name="summaryText" required></textarea>
+            
+            <button type="submit">Submit Review</button>
+        </form>
+    </main>
+    <script src="scripts.js"></script>
+</body>
+</html>
