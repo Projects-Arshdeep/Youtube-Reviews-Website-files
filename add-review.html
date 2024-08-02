@@ -3,34 +3,36 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Add Review</title>
+    <title>Add YouTube Video Review and Summary</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header>
-        <h1>Add YouTube Video Review</h1>
+        <h1>Add YouTube Video Review and Summary</h1>
         <nav>
             <a href="/">Home</a>
             <a href="/add-review.html">Add Review</a>
         </nav>
     </header>
     <main>
+        <h2>Add a New Review</h2>
         <form id="reviewForm">
-            <label for="videoTitle">Video Title:</label>
-            <input type="text" id="videoTitle" name="videoTitle" required>
-            
-            <label for="videoUrl">YouTube Video URL:</label>
-            <input type="url" id="videoUrl" name="videoUrl" required>
-            
-            <label for="reviewText">Review:</label>
-            <textarea id="reviewText" name="reviewText" required></textarea>
-            
-            <label for="summaryText">Summary:</label>
-            <textarea id="summaryText" name="summaryText" required></textarea>
-            
+            <input type="text" id="videoTitle" name="video_title" placeholder="Video Title">
+            <input type="text" id="videoUrl" name="video_url" placeholder="Video URL">
+            <textarea id="reviewText" name="review_text" placeholder="Review"></textarea>
+            <textarea id="summaryText" name="summary_text" placeholder="Summary"></textarea>
             <button type="submit">Submit Review</button>
+        </form>
+        <form id="updateReviewForm" style="display: none;">
+            <input type="hidden" id="updateId" name="id">
+            <input type="text" id="updateVideoTitle" name="video_title" placeholder="Video Title">
+            <input type="text" id="updateVideoUrl" name="video_url" placeholder="Video URL">
+            <textarea id="updateReviewText" name="review_text" placeholder="Review"></textarea>
+            <textarea id="updateSummaryText" name="summary_text" placeholder="Summary"></textarea>
+            <button type="submit">Update Review</button>
         </form>
     </main>
     <script src="scripts.js"></script>
 </body>
 </html>
+

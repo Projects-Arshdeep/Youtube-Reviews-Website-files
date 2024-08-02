@@ -8,7 +8,7 @@ body {
 header {
     background-color: #333;
     color: #fff;
-    padding: 1rem;
+    padding: 10px 0;
     text-align: center;
 }
 
@@ -18,50 +18,73 @@ header h1 {
 
 nav a {
     color: #fff;
-    margin: 0 1rem;
     text-decoration: none;
+    margin: 0 15px;
 }
 
 main {
-    padding: 2rem;
+    padding: 20px;
+}
+
+h2 {
+    color: #333;
 }
 
 form {
     background-color: #fff;
-    padding: 2rem;
+    padding: 20px;
     border-radius: 5px;
-    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
 }
 
-form label {
-    display: block;
-    margin-bottom: 0.5rem;
-}
-
-form input, form textarea {
+form input,
+form textarea {
     width: 100%;
-    padding: 0.5rem;
-    margin-bottom: 1rem;
+    padding: 10px;
+    margin-bottom: 10px;
     border: 1px solid #ccc;
-    border-radius: 5px;
+    border-radius: 3px;
 }
 
 form button {
-    padding: 0.5rem 2rem;
-    border: none;
-    background-color: #333;
+    background-color: #5cb85c;
     color: #fff;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 3px;
     cursor: pointer;
-    border-radius: 5px;
 }
 
-#reviews {
-    background-color: #fff;
-    padding: 2rem;
-    border-radius: 5px;
-    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+form button:hover {
+    background-color: #4cae4c;
 }
 
 .review {
-    margin-bottom: 2rem;
+    background-color: #fff;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.review h3 {
+    margin-top: 0;
+}
+
+.review p {
+    margin: 5px 0;
+}
+
+.review button {
+    background-color: #d9534f;
+    color: #fff;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.review button:hover {
+    background-color: #c9302c;
 }

@@ -17,6 +17,14 @@
     <main>
         <h2>Recent Reviews</h2>
         <div id="reviews"></div>
+        <form id="updateReviewForm" style="display:none;">
+            <input type="hidden" id="updateId" name="id">
+            <input type="text" id="updateVideoTitle" name="video_title" placeholder="Video Title">
+            <input type="text" id="updateVideoUrl" name="video_url" placeholder="Video URL">
+            <textarea id="updateReviewText" name="review_text" placeholder="Review"></textarea>
+            <textarea id="updateSummaryText" name="summary_text" placeholder="Summary"></textarea>
+            <button type="submit">Update Review</button>
+        </form>
     </main>
     <script src="scripts.js"></script>
 </body>
